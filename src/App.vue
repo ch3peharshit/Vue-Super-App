@@ -1,25 +1,19 @@
 <template>
-  <nav-bar/>
-  <div class="w-full flex">
-  <!-- <food-list /> -->
-  <calender-app/>
+  <nav-bar />
+  <div style="width:100%;display: flex">
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-//import FoodList from './components/FoodList.vue'
-import NavBar from './components/NavBar.vue'
-import CalenderApp from './components/CalendarApp.vue'
+import NavBar from "./components/NavBar.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-  //  FoodList,
     NavBar,
-    CalenderApp
-}
-}
+  },
+};
 </script>
 
 <style>
-
 </style>
