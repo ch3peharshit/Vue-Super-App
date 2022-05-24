@@ -1,16 +1,21 @@
 <template>
   <nav-bar/>
-  <food-list />
+  <div class="w-full flex">
+  <!-- <food-list /> -->
+  <calender-app/>
+  </div>
 </template>
 
 <script>
-import FoodList from './components/FoodList.vue'
+//import FoodList from './components/FoodList.vue'
 import NavBar from './components/NavBar.vue'
+import CalenderApp from './components/CalendarApp.vue'
 export default {
   name: 'App',
   components: {
-    FoodList,
+  //  FoodList,
     NavBar,
+    CalenderApp
 }
 }
 </script>
